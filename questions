@@ -1,0 +1,18 @@
+1. Compare the difference between account/UTXO based model
+   account-based: need to maintain account balance table, but each transaction needs to store less data
+   UTXO-based: no need to maintain account balance table; transactions are self-contained, but more space required to store transactions (means longer chain)
+2. How to ensure transaction order in account based model?
+   In my example I use arbitrary order in the input file as the transaction order.
+   In a network blockchain the order would be determined by the validation process.
+   The latest added block to the chain will take precedence and all transactions in it are executed in order.
+3. What is transaction/block?
+   Transactions are trade records we want to store in the blockchain.
+   Each block archives several transactions in it for further validations.
+4. Why to set block generation time?
+   New block needs to be validated by the community and it takes some time.
+5. When to update the account balance?
+   When a valid transaction is added to the blockchain.
+6. When to execute state finalizing?
+   Blockchain finalize states when a new validated block is added to the chain and all transactions in it are executed.
+7. In our spec, each account has 100 coins as the default balance. What is money minting on blockchain? How to make money?
+   Money is rewarded to those contributes computing power to calculate hashes for new added blocks.

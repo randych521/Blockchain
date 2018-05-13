@@ -1,0 +1,59 @@
+Read transaction: Bob->Mary:5.1 accepted
+Read transaction: David->Peter:15 accepted
+Read transaction: Kelly->Joe:1.5 accepted
+Read transaction: Peter->Stephen:110.4 accepted
+Read transaction: John->Kelly:8 accepted
+create block
+Read transaction: David->Joe:90 rejected
+Read transaction: Bob->Allen:40.3 accepted
+Read transaction: Allen->Peter:3.5 accepted
+Read transaction: Helen->Ken:11.6 accepted
+Read transaction: Aaron->Joseph:3 accepted
+Read transaction: John->Stephen:40 accepted
+create block
+Read transaction: Aaron->Ben:18.3 accepted
+Read transaction: Roger->Michael:7 accepted
+Read transaction: Scott->Alex:99 accepted
+Read transaction: Dennis->David:40 accepted
+Read transaction: Ken->Joe:110.5 accepted
+create block
+Read transaction: Dennis->Kelly:70 rejected
+Read transaction: Peter->Bob:65.5 rejected
+Read transaction: Allen->David:34 accepted
+Read transaction: David->Joe:90 accepted
+Read transaction: Mary->John:89.5 accepted
+Read transaction: Peter->Ken:4 accepted
+Read transaction: Stephen->Michael:1 accepted
+create block
+--------------------- Block #0 -------------------------
+Block Hash:  a583c347
+Parent Hash: 00000000
+Transaction Hash: 58d5a5f5 Bob=>Mary:5.1
+Transaction Hash: 3df77f3d David=>Peter:15
+Transaction Hash: 40f8c7bf Kelly=>Joe:1.5
+Transaction Hash: 8ee4b599 Peter=>Stephen:110.4
+Transaction Hash: 99f6225c John=>Kelly:8
+--------------------- Block #1 -------------------------
+Block Hash:  8282194e
+Parent Hash: a583c347
+Transaction Hash: 887bab54 Bob=>Allen:40.3
+Transaction Hash: 3f784eb1 Allen=>Peter:3.5
+Transaction Hash: 6d669d5a Helen=>Ken:11.6
+Transaction Hash: 0fd79ae2 Aaron=>Joseph:3
+Transaction Hash: 071af7cc John=>Stephen:40
+--------------------- Block #2 -------------------------
+Block Hash:  9d09ba5e
+Parent Hash: 8282194e
+Transaction Hash: 6f7b061d Aaron=>Ben:18.3
+Transaction Hash: ec8c21fd Roger=>Michael:7
+Transaction Hash: 77495c42 Scott=>Alex:99
+Transaction Hash: ea0d9150 Dennis=>David:40
+Transaction Hash: 1ad8a8bb Ken=>Joe:110.5
+--------------------- Block #3 -------------------------
+Block Hash:  ce2ec6dc
+Parent Hash: 9d09ba5e
+Transaction Hash: 7663c1bf Allen=>David:34
+Transaction Hash: 05fcfb11 David=>Joe:90
+Transaction Hash: b6366f84 Mary=>John:89.5
+Transaction Hash: b690ab45 Peter=>Ken:4
+Transaction Hash: 58883187 Stephen=>Michael:1
